@@ -1,0 +1,17 @@
+<html>
+<body>
+<form name="serching" action="search" method="get">
+    <input type="text" name="query"/><br/>
+    <input type="submit" value="SEARCH" style="margin-top: 10px; margin-bottom: 10px;"/>
+</form>
+<h3>Результаты поиска "{{query}}":</h3>
+{{#results}}
+    <div style="margin-bottom: 5px">
+        <b>{{title}}</b>
+        <i>(service: {{service}}</i>
+        <i>rank: {{rank}})</i>
+        <div> — {{reference}}</div>
+    </div>
+{{/results}}
+</body>
+</html>
